@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "punto-pila-landing",
+  "cleanUrls": true,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "conectar.html", "use": "@vercel/static" },
+    { "src": "descargar.html", "use": "@vercel/static" },
+    { "src": "*.png", "use": "@vercel/static" },
+    { "src": "*.mp4", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/conectar", "dest": "/conectar.html" },
+    { "src": "/descargar", "dest": "/descargar.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
